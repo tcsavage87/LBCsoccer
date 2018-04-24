@@ -6,7 +6,7 @@ body {
 h1 {
     margin: 0;
     font-weight: 400;
-    text-align:center;
+    text-align: center;
     background-color:#c8102e;
     padding-top: 1.5em;
     height: 2.5em;
@@ -22,108 +22,34 @@ h3 {
     text-align: center;
 }
 
+.menu {
+    width: 100%;
+}
+
 .motto {
-    width: 100%;
-    text-align: right;
     display: inline-block;
-}
-
-.coaching {
-    height: 3em;
-    width: 100%;
     text-align: center;
-    padding-top: 1.25em;
-    position: relative;
+    vertical-align: middle;
 }
 
-#coaching h2 {
-    background-color: grey;
-    padding: 2em;
-}
-
-figure {
+.crest {
     display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    min-width: 100px;
+    width: 15%;
 }
 
-#coaching img {
-    margin-left: em;
-    text-align: center;
-    margin-top: 2.5em;
-}
-
-
-#coaching p {
-    text-align: center;
-}
-
-iframe {
-    clear:both;
-    position: relative;
+.dropdown {
+    display: inline-block;
+    vertical-align: middle;
     float: right;
-    margin-right: .5em;
-    margin-bottom: 2em;
-}
-
-
-#values {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 2em;
-    text-align: center;
-    clear: both;
-    height: auto;
-    background-color: lightblue;
-    margin-bottom: 0;
-}
-
-.value1 {
-    margin-top: 0;
-    color: white;
-    background-image: url("Images/soccer%20field%20night.jpeg");
-    opacity: .75;
-    background-size: cover;
-    background-position: center;
-    max-height: 25%;
-    padding: 1.5em;
-}
-
-.value2 {
-    border-top: solid black 2px;
-    color: black;
-    background-image: url(Images/soccer%20team%20kneel.jpeg);
-    opacity: .75;
-    background-size: cover;
-    background-position: center;
-    padding: 1.5em;
-    max-height: 25%;
-}
-
-.value3 {
-    color: black;
-    border-top: solid black 2px;
-    background-image: url(Images/soccer%20goal%20sunset.jpeg);
-    opacity: .75;
-    background-size: cover;
-    background-position: center;
-    padding: 1.5em;
-    max-height: 25%;
-}
-
-.value4 {
-    color: black;
-    border-top: solid black 2px;
-    background-image: url(Images/stadium.jpeg);
-    opacity: .75;
-    background-size: cover;
-    background-position: center;
-    padding: 1.5em;
-    max-height: 25%;
 }
 
 .dropbtn {
     background-color: #c8102e;
     color: white;
-    padding: 1em;
+    padding: 1.5em;
     font-size: 16px;
     border: solid black;
     cursor: pointer;
@@ -131,12 +57,6 @@ iframe {
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: dimgray;
-}
-
-.dropdown {
-    margin-top: 1em;
-    position: absolute;
-    display: inline;
 }
 
 .dropdown-content {
@@ -158,3 +78,80 @@ iframe {
 .dropdown-content a:hover {background-color: #b8bdbd}
 
 .show {display:block;}
+
+
+.coaching {
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.25em;
+    position: relative;
+}
+
+#coaching h2 {
+    background-color: grey;
+    padding: 2em;
+    margin-top: .25em;
+    margin-bottom: 0;
+}
+
+figure {
+    display: inline-block;
+}
+
+#coaching img {
+    margin-left: em;
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+
+#coaching p {
+    text-align: center;
+}
+
+#values {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 0;
+    text-align: center;
+    clear: both;
+    height: auto;
+    background-color: lightblue;
+    margin-bottom: 0;
+}
+
+.value1 {
+    border-top: solid black 2px;
+    color: black;
+    max-height: 25%;
+    padding: 1.5em;
+}
+
+.value2 {
+    border-top: solid black 2px;
+    color: black;
+    padding: 1.5em;
+    max-height: 25%;
+}
+
+.value3 {
+    color: black;
+    border-top: solid black 2px;
+    padding: 1.5em;
+    max-height: 25%;
+}
+
+.value4 {
+    color: black;
+    border-top: solid black 2px;
+    padding: 1.5em;
+    max-height: 25%;
+}
+
+#facts {
+    border-top: solid black 2px;
+    padding: 1.5em;
+}
+
+
