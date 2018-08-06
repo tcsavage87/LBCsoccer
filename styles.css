@@ -256,7 +256,6 @@ figure {
 }
 
 .value1 {
-    border-top: solid black 2px;
     color: black;
     max-height: 25%;
     padding: 1.5em;
@@ -289,7 +288,6 @@ figure {
 }
 
 #facts {
-    border-top: solid black 2px;
     padding: 1.5em;
 }
 
