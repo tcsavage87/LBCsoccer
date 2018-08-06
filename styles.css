@@ -3,30 +3,221 @@ body {
     padding: 0;
 }
 
+
+body {
+  background: rgb(249, 249, 249);
+  font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
 h1 {
-    margin: 0;
-    font-weight: 400;
-    text-align:center;
-    background-color:#c8102e;
-    padding-top: 1.5em;
-    height: 2.5em;
-    width: 100%;
-    
+  /* color: rgba(200,16,46,1); */
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
 }
 
 h2 {
-    text-align: center;
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.375;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#motto {
+  color: rgb(200, 16, 47);
+  font-style: italic;
+  text-align: center;
 }
 
 h3 {
-    text-align: center;
+  margin-top: 60px;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.375;
+  color: rgba(200,16,46,1);
 }
 
-.motto {
-    width: 100%;
-    text-align: right;
-    display: inline-block;
+p {
+  font-size: 1.15em;
+  font-weight: 500;
+  line-height: 1.375;
+  color: rgb(56, 64, 67);
 }
+
+p a {
+  color: black;
+}
+
+ol li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: rgb(56, 64, 67);
+}
+
+.signUpButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  /* background-color: #ffffff; */
+
+  background-color:#c8102e;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.nav .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+
+.nav ul {
+  list-style: none;
+  /* background-color: #ffffff; */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 3.375;
+  height: 80px;
+  border-bottom: 1px solid #888;
+}
+
+.nav .main-nav a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  display: block;
+  transition: .3s background-color;
+  /* height: 100%; */
+  padding: 0px 20px;
+}
+
+.nav .main-nav a:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: rgba(255,255,255,0.95);
+}
+
+.nav .main-nav a.active {
+  background-color: rgb(255, 244, 247);
+  color: rgba(255,255,255,1);
+  color: rgb(255, 46, 99);
+  cursor: default;
+}
+
+.page-container {
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #fefefe;
+  /* box-shadow:  0 1px 1px rgba(0, 0, 0, 0.3); */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px;
+}
+
+
+body {
+  text-align: center;
+}
+
+blockquote {
+  position: relative;
+  margin: 0px;
+  margin-top: 40px;
+  padding: 40px 40px;
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px;
+}
+
+blockquote::before {
+	position:absolute;
+  font-family: cursive;
+	content:'"';
+	color:  rgba(200,16,46,1);
+	z-index: 20;
+	font-size:100px;
+	left: 20px;
+  top: -60px;
+}
+
+@media screen and (min-width: 600px) {
+
+  h2 {
+    text-align: left;
+  }
+
+  body {
+    text-align: left;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    /* background-color: #ffffff; */
+
+    background-color:#c8102e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav li {
+    /* min-width: 120px; */
+    border-bottom: none;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 3.775;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .page-container {
+    margin: 80px;
+    margin-top: 120px;
+    padding: 80px;
+    padding-top: 40px;
+  }
+
+}
+
+
+
+
 
 .coaching {
     height: 3em;
@@ -66,13 +257,7 @@ iframe {
 
 
 #values {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 2em;
-    text-align: center;
-    clear: both;
-    height: auto;
-    background-color: lightblue;
+    margin-top: 3em;
     margin-bottom: 0;
 }
 
@@ -88,7 +273,6 @@ iframe {
 }
 
 .value2 {
-    border-top: solid black 2px;
     color: black;
     background-image: url(Images/soccer%20team%20kneel.jpeg);
     opacity: .75;
@@ -100,7 +284,6 @@ iframe {
 
 .value3 {
     color: black;
-    border-top: solid black 2px;
     background-image: url(Images/soccer%20goal%20sunset.jpeg);
     opacity: .75;
     background-size: cover;
@@ -111,7 +294,6 @@ iframe {
 
 .value4 {
     color: black;
-    border-top: solid black 2px;
     background-image: url(Images/stadium.jpeg);
     opacity: .75;
     background-size: cover;
@@ -158,3 +340,89 @@ iframe {
 .dropdown-content a:hover {background-color: #b8bdbd}
 
 .show {display:block;}
+
+
+.image-right {
+  position: relative;
+  width: 50%;
+
+  background-size: contain;
+  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6;
+  }
+}
+
+.hero {
+  /* display: flex; */
+  min-height: 400px;
+  width: 100%;
+}
+
+#intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+#crest {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#crest img {
+  height: 240px;
+  width: auto;
+}
+
+#map-container {
+  height: 360;
+}
+
+iframe {
+  display:block;
+  width:100%;
+}
+
+.button-container {
+  margin: 60px;
+  text-align: center;
+}
+
+.button-container button {
+  background-color: rgba(200,16,46,1);
+  font-size: 1.6em;
+  font-weight: 700;
+  color: rgba(255,255,255,1);
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+
+}
+
+.button-container button:hover {
+  background-color: rgba(200,16,46,1);
+  font-size: 1.6em;
+  font-weight: 700;
+  color: rgba(255,255,255,1);
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px;
+
+}
